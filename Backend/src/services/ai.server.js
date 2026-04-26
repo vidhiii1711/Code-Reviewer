@@ -1,7 +1,3 @@
-require("dotenv").config();
-// `dotenv.config()` is required to **load environment variables from a `.env` file** into your Node.js application. It allows you to **securely store sensitive data** like API keys and database passwords outside your code.
-
-require("dotenv").config();
 const Groq = require("groq-sdk");
 const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
