@@ -1,5 +1,7 @@
-require ('dotenv').config()     //now we can acess the api key
-const app=require('./src/app')
-app.listen(5000, () => {           //server will start on https://code-reviewer-e3yq.onrender.com
-    console.log('Server is running...')
+require('dotenv').config()
+const app = require('./src/app')
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`)
 })
