@@ -29,7 +29,7 @@ function App() {
     setIsLoading(true)
     
     try {
-      const response = await axios.post('https://code-reviewer-e3yq.onrender.com', { code })
+      const response = await axios.post('https://code-reviewer-e3yq.onrender.com/ai/get-review', { code })
       setReview(response.data.review)
     } catch (error) {
       console.error('Error reviewing code:', error)
